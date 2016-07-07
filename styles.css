@@ -140,3 +140,11 @@ nav a.router-link-active {
 * { 
   font-family: Arial, Helvetica, sans-serif; 
 }
+
+.modal.modal-scroll {
+  overflow-y: auto;
+}
+
+pre {
+  max-height: 64vh;
+}
