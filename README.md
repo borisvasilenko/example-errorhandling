@@ -1,3 +1,11 @@
+# Error Handling in Angular 2 example
+
+Steps
+- Step 1. Default error handling https://github.com/borisvasilenko/example-errorhandling/tree/step1-default-handling
+- Step 2. Enabling long stack trace https://github.com/borisvasilenko/example-errorhandling/blob/step2-long-stack-trace
+- Step 3. Error pop-up https://github.com/borisvasilenko/example-errorhandling/tree/step3-error-popup
+- Step 4. Send report with Feedback pop-up https://github.com/borisvasilenko/example-errorhandling/tree/step4-send-report 
+
 # Angular 2 QuickStart Source
 
 This repository holds the TypeScript source code of the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html),
