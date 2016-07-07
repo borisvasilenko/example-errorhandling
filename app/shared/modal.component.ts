@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import * as Rx from 'rxjs/Rx';
 
@@ -17,6 +17,7 @@ import * as Rx from 'rxjs/Rx';
 })
 export class ModalComponent {
   @Input() public visible = false;
+  @Output() public closed = new EventEmitter();
 
   open() {
     this.visible = true;
@@ -24,5 +25,7 @@ export class ModalComponent {
 
   close() {
     this.visible = false;
+
+    this.closed.emit(null);
   }
 }
