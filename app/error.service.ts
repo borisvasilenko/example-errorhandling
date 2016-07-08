@@ -3,10 +3,17 @@ import * as Rx from "rxjs/Rx";
 
 @Injectable()
 export class ConsoleLogger {
-  log(s: any): void { console.log(s); }
-  logError(s: any): void { console.error(s); }
-  logGroup(s: any): void { console.log(s); }
-  logGroupEnd() {};
+    log(s: any): void { console.log(s); }
+    logGroup(s: any): void { console.log(s); }
+    logGroupEnd() {};
+
+    logError(s) {
+        if (typeof s === "string") {
+            console.error(new Error(s));
+        } else {
+            console.error(s);
+        }
+    }
 }
 
 @Injectable()
